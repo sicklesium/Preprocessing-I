@@ -153,6 +153,11 @@ body {
   width: 50%;
   margin: auto;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+}
 .container .anchor {
   margin-bottom: 6%;
 }
@@ -211,6 +216,13 @@ body {
   background: darkslateblue;
   position: sticky;
   top: 2vh;
+}
+@media (max-width: 500px) {
+  .container .box .navbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .container .box .navbox a {
   padding-left: 20px;

@@ -90,6 +90,10 @@ html, body {
 	width: 50%;
 	margin: auto;
 
+	@media (max-width:500px) {
+		width: 90%;
+	}
+
 	.anchor {
 		margin-bottom: 6%;
 	}
@@ -149,6 +153,11 @@ html, body {
 			background: @blue;
 			position: sticky;
 			top: 2vh;
+
+			@media (max-width:500px) {
+				.flexeddown();
+				align-items: center;
+			}
 
 			a {
 				padding-left: 20px;
