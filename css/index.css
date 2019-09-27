@@ -1,1 +1,242 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  background: darkslateblue;
+  color: ivory;
+  font-family: 'Roboto', 'Verdana';
+}
+.flexeddown {
+  display: flex;
+  flex-direction: column;
+}
+.flexedside {
+  display: flex;
+  flex-direction: row;
+}
+.boxed {
+  width: 75%;
+  padding: 1rem;
+  border: 1px dashed;
+}
+.container {
+  width: 50%;
+  margin: auto;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+}
+.container .anchor {
+  margin-bottom: 6%;
+}
+.container .box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  align-items: center;
+}
+.container .box .headerbox {
+  width: 75%;
+  padding: 1rem;
+  border: 1px dashed;
+  margin-bottom: 3%;
+}
+.container .box .headerbox h1 {
+  text-align: center;
+  font-family: 'Unica One';
+  font-size: 1.8rem;
+  color: #FFA07A;
+}
+.container .box .infobox {
+  width: 75%;
+  padding: 1rem;
+  border: 1px dashed;
+  margin-bottom: 3%;
+}
+.container .box .infobox h2 {
+  text-align: right;
+  font-family: 'Unica One';
+  font-size: 1.5rem;
+  margin: 1%;
+}
+.container .box .infobox p {
+  padding-bottom: 2%;
+  font-size: 1rem;
+}
+.container .box .infobox p strong {
+  font-weight: bold;
+}
+.container .box .infobox p em {
+  font-style: italic;
+}
+.container .box .infobox ul {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+.container .box .navbox {
+  width: 75%;
+  padding: 1rem;
+  border: 1px dashed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 3%;
+  background: darkslateblue;
+  position: sticky;
+  top: 2vh;
+}
+@media (max-width: 500px) {
+  .container .box .navbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.container .box .navbox a {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  color: #FFFFF0;
+  background: darkslateblue;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 0.9rem;
+  transition: 0.5s all ease-in-out;
+  font-family: 'Nova Mono';
+}
+.container .box .navbox a:hover {
+  color: darkslateblue;
+  background: #FFA07A;
+}
